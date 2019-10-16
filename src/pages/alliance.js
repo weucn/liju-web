@@ -26,7 +26,6 @@ class Alliance extends Component {
     }
   }
 
-
   componentDidMount() {
     const { asPath } = this.props.url
     const title = transTitle(asPath[asPath.length - 1])
@@ -76,7 +75,7 @@ class Alliance extends Component {
                       const title = index + 1;
                       return (
                         <Link href={`/alliance?title=${title}`} key={index}>
-                          <div className={'col vertical-lt c333 content-title-back'}>
+                          <div className={'col vertical-lt c333 content-title-back cursor-pointer'}>
                             <span className={'fz18'}>
                               0{title}
                             </span>

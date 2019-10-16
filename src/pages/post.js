@@ -1,4 +1,5 @@
 import React from 'react';
+import Router from 'next/router'
 import Layout from '../components/Layout';
 import Markdown from "react-markdown";
 import industry from '../../static/md/industry';
@@ -7,10 +8,14 @@ import company from '../../static/md/company';
 const Post = props => {
   const { type, title } = props.query
   const markdown = type === 'i' ? industry[title] : company[title]
+  const back = () => {
+    Router.back();
+  }
   return (
     <Layout>
       <div className={'col'}>
         <div className={'markdown-layout'}>
+          <div className={'fz16 return-button cursor-pointer'} onClick={back}> &lt; 返回</div>
           <Markdown className={'markdown'} source={markdown.content} />
         </div>
       </div>
@@ -19,6 +24,11 @@ const Post = props => {
             max-width:1200px;
             padding:60px;
             padding-top:90px;
+          }
+
+          .return-button:hover{
+            color:#eb6866;
+            text-decoration:underline;
           }
 
           .markdown {

@@ -3,6 +3,7 @@ import Layout from '../components/Layout';
 import { Carousel } from 'react-bootstrap';
 import { Map, Marker } from 'react-amap';
 
+
 class Home extends Component {
   constructor() {
     super();
@@ -59,8 +60,8 @@ class Home extends Component {
           <iframe src="//player.bilibili.com/player.html?aid=71300213&cid=123540392&page=1" width="580" height="450" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
         </div>
         <div className={"col main c333"}>
-          <h1 className={"fz28 padding-top80"}>女神家·有芯的家</h1>
-          <div className={"cccc"}>HOME OF GODDESS HOME WITH CODE</div>
+          <h1 className={"fz28 main-title"}>女神家·有芯的家</h1>
+          <div className={"cccc main-subtitle"}>Heartisan HOME WITH CODE</div>
           <div className={"main-column cfff"}>
             <div>
               <h2>芯理念·用芯做窗帘</h2>
@@ -83,8 +84,8 @@ class Home extends Component {
               <img alt="芯精神" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/maincolumn/maincolumn4.png' />
             </div>
           </div>
-          <h1 className={"fz28 padding-top80"}>热销产品</h1>
-          <div className={"cccc"}>PRODUCT SELL LIKE HOT CAKES</div>
+          <h1 className={"fz28 main-title"}>热销产品</h1>
+          <div className={"cccc main-subtitle"}>PRODUCT SELL LIKE HOT CAKES</div>
           <div className={"row hot"}>
             <div className={"col-t padding-right10"}>
               <img alt="极简系列" src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/hot/极简系列.png" />
@@ -101,8 +102,8 @@ class Home extends Component {
         </div>
         <div className={'col address'}>
           <h1 className={"fz28"}>公司地址</h1>
-          <div className={"cccc"}>THE COMPANY ADDRESS</div>
-          <div style={{ width: 900, height: 500, marginTop: 30, marginBottom: 30 }}>
+          <div className={"cccc main-subtitle"}>THE COMPANY ADDRESS</div>
+          <div style={{ width: 900, height: 500, marginBottom: 30 }}>
             <Map
               center={this.mapCenter}
               zoom={16}
@@ -110,36 +111,40 @@ class Home extends Component {
               <Marker position={this.markerPosition} />
             </Map>
           </div>
-          <div className={'col fz24'}>
+          <div className={'fz24 col-t'}>
             <div>
               女神家
-              </div>
+            </div>
             <div>
               加盟热线：0575-85103188
-              </div>
+            </div>
             <div>
               生产中心地址：浙江省绍兴市齐贤镇中意企业北门7号
-              </div>
+            </div>
             <div>
               销售研发中心：浙江省绍兴市柯桥区黄社溇路银座国际商务中心
-              </div>
+            </div>
           </div>
-          <div className={'col'}>
+          <div className={'col-t'}>
             <div>
-              The goddess of the home
-              </div>
+              Heartisan
+            </div>
             <div>
               Join hotline: 0575-85103188
-              </div>
+            </div>
             <div>
               Production center address: zhejiang shaoxing qixian town zhongyi enterprise north gate 7
-              </div>
+            </div>
             <div>
               Sales r & d center: yinza international business center, huangshelou road, keqiao district, shaoxing city, zhejiang province
-              </div>
+            </div>
           </div>
         </div>
         <style jsx>{`
+        .margin-bottom{
+          margin-bottom:30px;
+        }
+
         .head{
           position:relative;
         }
@@ -176,10 +181,6 @@ class Home extends Component {
           text-align:center;
         }
 
-        .padding-top80{
-          padding-top:80px;
-        }
-
         .padding-left10{
           padding-left:10px;
         }
@@ -195,14 +196,25 @@ class Home extends Component {
 
         }
 
+        .main-title{
+          margin-top:60px;
+        }
+
+        .main-subtitle{
+          margin-bottom:40px;
+        }
+
         .main-column{
-          margin:20px 0;
           max-width:1200px;
         }
 
         .main-column>div{
           position:relative;
           margin-top:38px;
+        }
+
+        .main-column>div:first-child{
+          margin-top:0px;
         }
 
         .main-column>div>h2,.main-column>div>span{
@@ -227,10 +239,10 @@ class Home extends Component {
 
         .address{
           background: rgba(0,0,0,0.05);
-          padding:80px 0;
+          padding:60px 0;
         }
       `}</style>
-      </Layout>
+      </Layout >
     )
   }
 }

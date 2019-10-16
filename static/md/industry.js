@@ -41,7 +41,7 @@ const industry = [{
 
 由于家居产品的特性和行业特性，使得实体门店零售渠道一直是其主流销售方式。能看得见摸得着实物产品，更符合消费者挑选购买的习惯。因此，传统家居产品购买流程中，体验和交付通常在同一场景中完成。
 
-![image](https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/industry/1-4.png)
+![image](https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/industry/1-4.jpg)
 
 但是在新零售业态下，“货”的交付方式越来越多样化。最明显的改变就是，家居产品可以实现线上渠道和交付方式的创新，使得体验、付款和交付等环节能够实现剥离，从而节省用户的时间。
 

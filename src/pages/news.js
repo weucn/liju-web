@@ -77,7 +77,7 @@ class News extends Component {
                       const title = index + 1;
                       return (
                         <Link href={`/news?title=${title}`} key={index}>
-                          <div className={'col vertical-lt c333 content-title-back'}>
+                          <div className={'col vertical-lt c333 content-title-back cursor-pointer'}>
                             <span className={'fz18'}>
                               0{title}
                             </span>
@@ -97,7 +97,7 @@ class News extends Component {
                 titles.map((item, index) => {
                   if (index === 0) {
                     return (
-                      <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
+                      <div className={item === title ? 'article col cursor-pointer' : 'article col article-nodisplay'} key={index}>
                         {
                           industry.map((nItem, nIndex) => {
                             return (
@@ -132,7 +132,7 @@ class News extends Component {
                   }
                   else {
                     return (
-                      <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
+                      <div className={item === title ? 'article col cursor-pointer' : 'article col article-nodisplay'} key={index}>
                         {
                           company.map((nItem, nIndex) => {
                             return (

@@ -119,7 +119,7 @@ class Goddesshouse extends Component {
                       const title = index + 1;
                       return (
                         <Link href={`/goddesshouse?title=${title}`} key={index}>
-                          <div className={'col vertical-lt c333 content-title-back'}>
+                          <div className={'col vertical-lt c333 content-title-back cursor-pointer'}>
                             <span className={'fz18'}>
                               0{title}
                             </span>

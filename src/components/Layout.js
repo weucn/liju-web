@@ -1,3 +1,5 @@
+import 'core-js/stable';
+import 'regenerator-runtime/runtime';
 import React, { Fragment } from 'react';
 import Head from 'next/head'
 import NavigationBar from '../components/NavigationBar';
@@ -7,11 +9,14 @@ const Layout = props => (
   <Fragment>
     <Head>
       <title>女神家</title>
+      <meta http-equiv="Content-Type" content="text/html;charset=utf-8"></meta>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
+      <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
+
       <link rel="shortcut icon" href="./static/logo.ico" />
       <meta name="author" content="浙江芯云家居科技"></meta>
       <meta name="keywords" content="成品窗帘，合作加盟，附近窗帘" />
       <meta name="description" content="线下成品窗帘新零售，定制窗帘下单，智能化工厂生成，为您提供牌窗帘订单查询等服务。"></meta>
-      <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
       <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"

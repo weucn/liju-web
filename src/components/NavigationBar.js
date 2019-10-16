@@ -80,7 +80,7 @@ export default function NavigationBar() {
       <nav className={'row nav'}>
         <div>
           <Link href={'/'}>
-            <img className={'logo'} src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/logo.png" alt="my image" />
+            <img className={'logo cursor-pointer'} src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/logo.png" alt="my image" />
           </Link>
         </div>
         <ul className={'row mean cursor-default'}>
@@ -88,7 +88,7 @@ export default function NavigationBar() {
             headContent.map((item, index) => {
               return (
                 <Link href={item.herf} key={index}>
-                  <li>
+                  <li className={'cursor-pointer'}>
                     {item.title}
                     <ul>
                       {
@@ -119,8 +119,8 @@ export default function NavigationBar() {
         z-index:100;
         left:0;
         top:0;
-        background-color: #fff;
         border:#fff;
+        background: #fcfcfc;
         box-shadow: 0 2px 8px rgba(0,0,0,.4);
         margin:0;
       }
@@ -143,7 +143,6 @@ export default function NavigationBar() {
         width:1200px;
         padding:0 60px;
         height:60px;
-        background: rgba(0,0,0,0.01);
         margin:0
       }
 
@@ -184,6 +183,7 @@ export default function NavigationBar() {
       .mean >li > ul >li{
         height:30px;
         line-height:30px;
+        font-size:14px;
       }
 
       .mean >li > ul >li{

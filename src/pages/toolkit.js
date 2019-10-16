@@ -54,7 +54,7 @@ class Toolkit extends Component {
         <div className={'col'}>
           <div className={'layout'}>
             <div className={'title'}>
-              首页-加盟中心-{title}
+              首页-工具包-{title}
             </div>
             <div className={'row-l vertical-lt'}>
               <div className={'content-title'}>
@@ -106,14 +106,14 @@ class Toolkit extends Component {
                   else if (index === 1) {
                     return (
                       <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
-                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/publicaddress.png'} className={'img'} />
+                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/smallapp.png'} className={'img'} />
                       </div>
                     )
                   }
                   else {
                     return (
                       <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
-                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/smallapp.png'} className={'img'} />
+                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/publicaddress.png'} className={'img'} />
                       </div>
                     )
                   }

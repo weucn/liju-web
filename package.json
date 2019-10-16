@@ -21,6 +21,7 @@
     "bootstrap": "^4.3.1",
     "camelcase": "^5.2.0",
     "case-sensitive-paths-webpack-plugin": "2.2.0",
+    "core-js": "^3.3.2",
     "css-loader": "2.1.1",
     "dotenv": "6.2.0",
     "dotenv-expand": "5.1.0",
@@ -145,11 +146,20 @@
   },
   "babel": {
     "presets": [
-      "next/babel"
+      [
+        "next/babel",
+        {
+          "preset-env": {},
+          "transform-runtime": {},
+          "styled-jsx": {},
+          "class-properties": {}
+        }
+      ]
     ],
     "plugins": []
   },
   "devDependencies": {
+    "@babel/preset-env": "^7.6.3",
     "compression": "^1.7.4",
     "cross-env": "^6.0.3",
     "express": "^4.17.1",
