@@ -1,5 +1,5 @@
 const company = [{
-  date: '2019-10-15',
+  date: '2018-12-18',
   title: '征集面料商家 | 免费走货渠道，有好货你就来',
   describe: '',
   content: `
@@ -32,7 +32,7 @@ const company = [{
 ![image](https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/company/1-5.png)
   `,
 }, {
-  date: '2019-10-15',
+  date: '2019-08-18',
   title: '展会回顾 | 行业首展亮模式，一石激起千层浪！',
   describe: '8月15日-17日，女神家Heartisan Home✖️上海软装展完美落幕！',
   content: `

@@ -81,6 +81,28 @@ const product = () => (
           margin-bottom:30px;
         }
 
+        @media screen and (max-width: 768px) {
+          .colum{
+            width:35%;
+            height:20%;
+            margin-left:32.5%;
+          }
+          .colum>img{
+            width:100%;
+            
+          }
+          .colum-describe{
+            width:28%;
+            padding:0 1%;
+          }
+          .colum-describe>h1{
+            font-size:1.1em;
+          }
+          .colum-describe>div{
+            font-size:0.2em;
+            opacity:.9
+          }
+        }
         `}
     </style>
   </Layout>

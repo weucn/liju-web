@@ -57,7 +57,7 @@ class Toolkit extends Component {
               首页-工具包-{title}
             </div>
             <div className={'row-l vertical-lt'}>
-              <div className={'content-title'}>
+              <div className={'content-title cursor-pointer'}>
                 {
                   titles.map((item, index) => {
                     if (item === title) {
@@ -99,21 +99,35 @@ class Toolkit extends Component {
                   if (index === 0) {
                     return (
                       <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
-                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/app.png'} className={'img'} />
+                        <div className="row-l vertical-rb article-title">
+                          <div className="fz48 c333">软件APP</div>
+                          <div className="fz24 c333">（IOS、ANDROID、IPAD）扫码下载</div>
+                        </div>
+                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/app.jpg'} className={'img'} />
                       </div>
                     )
                   }
                   else if (index === 1) {
                     return (
                       <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
-                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/smallapp.png'} className={'img'} />
+                        <div className="row-l vertical-rb article-title">
+                          <div className="fz48 c333">微信小程序</div>
+                          <div className="fz24 c333">（扫码点击关注小程序）</div>
+                        </div>
+                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/smallapp.jpg'} className={'img'} />
+                        <div className="fz24 c333">女神家小程序</div>
                       </div>
                     )
                   }
                   else {
                     return (
                       <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
-                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/publicaddress.png'} className={'img'} />
+                        <div className="row-l vertical-rb article-title">
+                          <div className="fz48 c333">微信公众号</div>
+                          <div className="fz24 c333">（扫码点击关注公众号）</div>
+                        </div>
+                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/public.jpg'} className={'img'} />
+                        <div className="fz24 c333">女神家公众号</div>
                       </div>
                     )
                   }
@@ -177,8 +191,14 @@ class Toolkit extends Component {
           display:none;
         }
 
+        .article-title{
+          width:80%;
+        }
+
         .img{
-          width:100%;
+          width:360px;
+          height:360px;
+          margin:67px 0 21px;
         }
         
         .tags{

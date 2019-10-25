@@ -73,6 +73,7 @@ const footContent = [{
     herf: '/toolkit?title=3'
   }]
 }]
+
 const Footer = () => (
   <footer className={'row footer c333 vertical-lt no-select'}>
     {
@@ -106,6 +107,11 @@ const Footer = () => (
       padding-bottom:40px;
     }
 
+    .title{
+      font-weight:500;
+      margin-bottom:16px;
+    }
+
     @media screen and (min-width: 1200px) {
       .footer{
         padding-left:calc((100% - 1200px)/2);
@@ -113,16 +119,26 @@ const Footer = () => (
       }
     }
 
-    @media screen and (max-width: 1200px) {
+    @media screen and (max-width: 768px) {
+      .title{
+        font-size:0.8em;
+      }
       .footer{
         padding-left:0;
         padding-right:0;
       }
-    }
-
-    .title{
-      font-weight:500;
-      margin-bottom:16px;
+      .footer>div{
+        padding-left:2%;
+        padding-right:2%;
+      }
+      .footer>img{
+        width:10%;
+        height:10%;
+      }
+      .cursor-pointer{
+        font-size:0.5em;
+        text-align:center;
+      }
     }
     `}
     </style>

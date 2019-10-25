@@ -12,10 +12,9 @@ const Layout = props => (
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"></meta>
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
-
       <link rel="shortcut icon" href="./static/logo.ico" />
       <meta name="author" content="浙江芯云家居科技"></meta>
-      <meta name="keywords" content="成品窗帘，合作加盟，附近窗帘" />
+      <meta name="keywords" content="窗帘品牌，窗帘加盟，一线品牌窗帘，女神家窗帘品牌，女神家官网" />
       <meta name="description" content="线下成品窗帘新零售，定制窗帘下单，智能化工厂生成，为您提供牌窗帘订单查询等服务。"></meta>
       <link
         rel="stylesheet"
@@ -214,6 +213,10 @@ const Layout = props => (
       
       .fz28 {
         font-size: 28px;
+      }
+
+      .fz48 {
+        font-size: 48px;
       }
       
       .content-padding {

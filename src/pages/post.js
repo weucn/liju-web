@@ -54,7 +54,8 @@ const Post = props => {
 
           .markdown img{
             margin-left:-35px;
-            width:1100px;
+            width:550px;
+            margin-left:20%;
           }
 
         `}</style>

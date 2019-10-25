@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import Link from 'next/link';
+import { Map, Marker } from 'react-amap';
+import markers from '../components/Markers';
 
-const titles = ["加盟支持", "加盟申请"]
+
+const titles = ["加盟支持", "加盟申请", "全国加盟店"]
 
 const transTitle = (index) => {
   let title = ''
@@ -14,8 +17,23 @@ const transTitle = (index) => {
     case "2":
       title = "加盟申请"
       break;
+    case "3":
+      title = "全国加盟店"
+      break;
   }
   return title
+}
+
+const styleIcon = {
+  background: `url('http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/map-marker-icon.png')`,
+  backgroundSize: 'contain',
+  backgroundRepeat: 'no-repeat',
+  backgroundPosition: 'center',
+  width: '30px',
+  height: '40px',
+  color: '#000',
+  textAlign: 'center',
+  lineHeight: '40px'
 }
 
 class Alliance extends Component {
@@ -24,6 +42,7 @@ class Alliance extends Component {
     this.state = {
       title: '加盟支持'
     }
+    this.mapCenter = { longitude: 104.114129, latitude: 37.550339 };
   }
 
   componentDidMount() {
@@ -109,11 +128,33 @@ class Alliance extends Component {
                       </div>
                     )
                   }
-                  else {
+                  else if (index === 1) {
                     return (
                       <div className={item === title ? 'article vertical-lt col' : 'article col article-nodisplay'} key={index}>
-                        <h3 className={'fz24'}>加人我们</h3>
+                        <h3 className={'fz24'}>加入我们</h3>
                         <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/alliance/alliance3.png'} className={'img'} />
+                      </div>
+                    )
+                  }
+                  else if (index === 2) {
+                    return (
+                      <div className={item === title ? 'article vertical-lt col' : 'article col article-nodisplay'} key={index}>
+                        <div style={{ width: 900, height: 500 }}>
+                          <Map
+                            center={this.mapCenter}
+                            zoom={4}
+                          >
+                            {
+                              markers.map((item) => {
+                                return (
+                                  <Marker position={item}>
+                                    <div style={styleIcon}></div>
+                                  </Marker>
+                                )
+                              })
+                            }
+                          </Map>
+                        </div>
                       </div>
                     )
                   }
@@ -173,6 +214,10 @@ class Alliance extends Component {
           background: rgba(216,216,216,0.10);
         }
 
+        .article>h3{
+          margin:20px 30px;
+        }
+
         .article-nodisplay{
           display:none;
         }
@@ -202,7 +247,7 @@ class Alliance extends Component {
         }
         `}
         </style>
-      </Layout>
+      </Layout >
     )
   }
 }

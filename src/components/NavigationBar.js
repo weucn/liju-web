@@ -48,6 +48,9 @@ const headContent = [{
   }, {
     text: '加盟申请',
     herf: '/alliance?title=2'
+  },{
+    text: '全国加盟店',
+    herf: '/alliance?title=3'
   }]
 }, {
   title: '新闻中心',
@@ -78,7 +81,7 @@ export default function NavigationBar() {
   return (
     <div className={'row bar'}>
       <nav className={'row nav'}>
-        <div>
+        <div className="nav-img">
           <Link href={'/'}>
             <img className={'logo cursor-pointer'} src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/logo.png" alt="my image" />
           </Link>
@@ -195,6 +198,46 @@ export default function NavigationBar() {
       .mean >li > ul >li:hover{
         background-color: rgba(235,104,102,0.8);
         color:#fff;
+      }
+      @media screen and (min-width: 1200px) {
+        .bar{
+          padding:0 calc((100% - 1200px)/2);
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        .bar{
+          padding:0;
+          width:100%;
+        }
+        .nav{
+          padding:0;
+          width:100%;
+          align-items:baseline ;
+          justify-content:space-around;
+        }
+        .nav-img{
+          width:20%;
+          font-size:0.4em;
+          text-align:center;
+        }
+        .nav-img>img{
+          width:100%;
+        }
+        .mean{
+          width:80%;
+          padding:0;
+          justify-content:flex-start;
+        }
+        .mean>li{
+          width:20%;
+          font-size:0.3em;
+        }
+        .nav-tail{
+          opacity:0;
+          width:0;
+          height:0;
+        }
       }
       `}</style>
     </div>

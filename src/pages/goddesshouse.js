@@ -320,8 +320,9 @@ class Goddesshouse extends Component {
           border: 1px solid #ccc;
           background-color: #ccc;
         }
-
-
+        @media screen and (max-width:768px){
+          
+        }
         `}
         </style>
       </Layout >
