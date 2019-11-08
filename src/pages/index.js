@@ -63,10 +63,6 @@ class Home extends Component {
                 src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/carousel1.png"
                 alt="First slide"
               />
-              <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -74,10 +70,6 @@ class Home extends Component {
                 src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/carousel2.jpg"
                 alt="Third slide"
               />
-              <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
@@ -85,10 +77,6 @@ class Home extends Component {
                 src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/carousel3.jpg"
                 alt="Third slide"
               />
-              <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-              </Carousel.Caption>
             </Carousel.Item>
           </Carousel>
         </div>
@@ -111,7 +99,7 @@ class Home extends Component {
               <span>芯精神</span>
             </div>
           </div>
-          <iframe src="//player.bilibili.com/player.html?aid=71300213&cid=123540392&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <iframe src="//player.bilibili.com/player.html?aid=71300213&cid=123540392&page=1&as_wide=1&&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
         </div>
         <div className={"col main c333"}>
           <h1 className={"fz28 main-title"}>女神家·有芯的家</h1>

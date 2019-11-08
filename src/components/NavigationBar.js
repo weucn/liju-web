@@ -48,7 +48,7 @@ const headContent = [{
   }, {
     text: '加盟申请',
     herf: '/alliance?title=2'
-  },{
+  }, {
     text: '全国加盟店',
     herf: '/alliance?title=3'
   }]
@@ -113,7 +113,7 @@ export default function NavigationBar() {
           }
         </ul>
         <div className={'nav-tail'}>
-          加盟热线：0575-85103185
+          加盟热线：0575-85103188
         </div>
       </nav>
       <style jsx>{`
