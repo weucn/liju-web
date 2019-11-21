@@ -404,7 +404,7 @@ class Home extends Component {
             justify-content:center;
           }
           .hot-img1,.hot-img2,.hot-img3{
-            width:20%
+            // width:20%
           }
           .hot-left{
             // padding:0 0 0 4.5%;

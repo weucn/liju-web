@@ -195,40 +195,12 @@ export default function NavigationBar() {
           padding:0 calc((100% - 1200px)/2);
         }
       }
-
-      @media screen and (min-width:768px) and (max-width: 1200px){
+      @media screen and (max-width: 1200px) {
         .bar{
           padding:0;
-          width:100%;
-        }
-        .nav{
-          padding:0;
-          width:100%;
-          align-items:baseline ;
-          justify-content:space-around;
-        }
-        .nav-img{
-          width:10%;
-          text-align:center;
-        }
-        .nav-img>img{
-          width:100%;
-        }
-        .mean{
-          width:80%;
-          padding:0;
-          justify-content:flex-start;
-        }
-        .mean>li{
-          width:20%;
-          font-size:0.3em;
-        }
-        .nav-tail{
-          opacity:0;
-          width:0;
-          height:0;
         }
       }
+      
 
       @media screen and (max-width: 767px) {
         .bar{

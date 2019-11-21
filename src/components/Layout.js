@@ -33,9 +33,9 @@ const Layout = props => (
         margin: 0px;
       }
 
-      @media screen and (min-width:768px) and (max-width:1200px){
+      @media screen and (min-width:768px){
         .layout-container{
-          width:100%;
+          min-width:1200px;
           margin:0 auto;
         }
       }
