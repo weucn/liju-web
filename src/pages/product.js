@@ -44,7 +44,7 @@ const product = () => (
           })
         }
       </div>
-      <img alt="系列图" src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/smallprogram.png" />
+      <img className={'code'} alt="系列图" src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/smallprogram.png" />
       <span className={'tip'}>更多产品请扫：小程序二维码</span>
     </div>
     <style jsx>{`
@@ -81,26 +81,49 @@ const product = () => (
           margin-bottom:30px;
         }
 
-        @media screen and (max-width: 768px) {
-          .colum{
-            width:35%;
-            height:20%;
-            margin-left:32.5%;
+        @media screen and (min-width:768px) and (max-width:1200px){
+          .layout{
+            min-width:100%;
+            padding:60px 0;
           }
+
           .colum>img{
             width:100%;
-            
+          }          
+        }
+
+        @media screen and (max-width: 767px) {
+          .layout{
+            min-width:100%;
+            padding:60px 0;
           }
+
+          .colum>img{
+            width:100%;
+          }
+
           .colum-describe{
-            width:28%;
-            padding:0 1%;
+            width:100%;
           }
+
           .colum-describe>h1{
-            font-size:1.1em;
+            font-size:23px;
           }
+
           .colum-describe>div{
-            font-size:0.2em;
+            font-size:10px;
             opacity:.9
+          }
+
+          .code{
+            width:30%;
+            height:30%;
+          }
+
+          .tip {
+            margin-top:20px;
+            margin-bottom:30px;
+            font-size:10px;
           }
         }
         `}

@@ -270,6 +270,29 @@ class News extends Component {
           border: 1px solid #ccc;
           background-color: #ccc;
         }
+
+        // @media screen and (max-width: 767px) {
+        //   .layout{
+        //     min-width:100%;
+        //     width:100%;
+        //     padding:60px 0;
+        //   }
+
+        //   .row-l{
+        //     display: flex;
+        //     flex-direction: column ;
+        //     justify-content: flex-start;
+        //     align-items:conter;
+        //   }
+
+        //   .content-title{
+        //     width:100%;
+        //     display: flex;
+        //     flex-direction: row;
+        //     justify-content: flex-start;
+        //     align-items:conter;
+        //   }
+        // }
         `}
         </style>
       </Layout>

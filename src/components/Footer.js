@@ -119,7 +119,14 @@ const Footer = () => (
       }
     }
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width:1200px) and (min-width:768px){
+      .footer{
+        padding-left:calc((100% - 1200px)/2);
+        padding-right:calc((100% - 1200px)/2);
+      }
+    }
+
+    @media screen and (max-width: 767px) {
       .title{
         font-size:0.8em;
       }

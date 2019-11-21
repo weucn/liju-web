@@ -58,7 +58,55 @@ const Post = props => {
             margin-left:20%;
           }
 
-        `}</style>
+          @media screen and (min-width:768px) and (max-width: 1200px){
+            .markdown-layout{
+              width:100%;
+              padding:0px;
+              padding-top:90px;
+            }
+
+            .markdown h2{
+              font-size:20px;
+            }
+
+            .markdown h3{
+              font-size:17px;
+            }
+
+            .markdown p{
+              font-size:10px;
+            }
+
+            .markdown img{
+              width:50%;
+            }
+          }
+
+          @media screen and (max-width: 767px) {
+            .markdown-layout{
+              width:100%;
+              padding:0px;
+              padding-top:90px;
+            }
+
+            .markdown h2{
+              font-size:20px;
+            }
+
+            .markdown h3{
+              font-size:17px;
+            }
+
+            .markdown p{
+              font-size:10px;
+            }
+
+            .markdown img{
+              width:275px;
+              margin:0;
+            }
+          }
+       `}</style>
     </Layout>
   );
 }

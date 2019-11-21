@@ -359,7 +359,7 @@ class Home extends Component {
           margin-top:20px;
         }
 
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 767px) {
           .carousel-pic{
             margin-top:60px;
           }
