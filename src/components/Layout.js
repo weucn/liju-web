@@ -8,20 +8,33 @@ import Footer from '../components/Footer';
 const Layout = props => (
   <Fragment>
     <Head>
-      <title>女神家</title>
+      <title>Heartisan 芯云软装</title>
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"></meta>
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
       <link rel="shortcut icon" href="./static/logo.ico" />
       <meta name="author" content="浙江芯云家居科技"></meta>
-      <meta name="keywords" content="窗帘品牌，窗帘加盟，一线品牌窗帘，女神家窗帘品牌，女神家官网" />
-      <meta name="description" content="线下成品窗帘新零售，定制窗帘下单，智能化工厂生成，为您提供牌窗帘订单查询等服务。"></meta>
+      <meta name="keywords" content="芯云,芯云软装,Heartisan,heartisan,软装云平台,设计师共享服务网络,海量软装供应链入驻平台。" />
+      <meta name="description" content="提供窗帘墙布背景,挂画,地毯,家纺,床上用品,小布艺,沙发垫,桌布,餐垫家居饰品,花瓶,干花,花艺,家具等优质供应链。同时,软装设计师创业者共享本地服务体验中心,配套上门设计服务,享有厂家与商家双重保障。"></meta>
       <link
         rel="stylesheet"
         href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
         crossorigin="anonymous"
       />
+      <script>
+        {
+          `
+          var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2fa35561baf0d8ca0cb7da8849347671";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+          `
+        }
+      </script>
     </Head>
     <NavigationBar />
     <div className="layout-container no-select">

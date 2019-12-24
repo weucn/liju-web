@@ -41,16 +41,16 @@ class Home extends Component {
   }
 
   componentDidMount() {
-    window.addEventListener('resize', this.handleResize.bind(this)) //监听窗口大小改变
+    // window.addEventListener('resize', this.handleResize.bind(this)) //监听窗口大小改变
   }
 
   componentWillUnmount() { //一定要最后移除监听器，以防多个组件之间导致this的指向紊乱
-    window.removeEventListener('resize', this.handleResize.bind(this))
+    // window.removeEventListener('resize', this.handleResize.bind(this))
   }
 
-  handleResize = e => {
-    console.log('浏览器窗口大小改变事件', e.target.innerWidth)
-  }
+  // handleResize = e => {
+  //   console.log('浏览器窗口大小改变事件', e.target.innerWidth)
+  // }
 
   render() {
     return (

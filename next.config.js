@@ -15,7 +15,8 @@ module.exports = withCSS({
       '/alliance': { page: '/alliance' },
       '/news': { page: '/news' },
       '/post': { page: '/post' },
-      '/toolkit': { page: '/toolkit' }
+      '/toolkit': { page: '/toolkit' },
+      '/policy': { page: '/policy' }
     };
     return paths;
   }
