@@ -197,17 +197,17 @@ class News extends Component {
         }
 
         .content-title-back-select{
-          background-image: linear-gradient(270deg, #EB6866 0%, #FF8764 100%);
+          background-color: #BE7052;
         }
 
         .strip{
-          width:66px;
+          width:60px;
           height:2px;
           margin-bottom:2px;
         }
 
         .strip-background{
-          background-color:red;
+          background-color: #BE7052;
         }
 
         .strip-background-select{

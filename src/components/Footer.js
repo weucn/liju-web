@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 
 const footContent = [{
-  title: '女神家',
+  title: '软装云',
   herf: '/',
   content: [{
     text: '品牌简介',
@@ -21,22 +21,16 @@ const footContent = [{
     herf: '/goddesshouse?title=5'
   }]
 }, {
-  title: '产品中心',
+  title: 'IT赋能',
   herf: '/product',
   content: [{
-    text: '极简系列',
+    text: '多元产品',
     herf: '/product',
   }, {
-    text: '乐活系列',
+    text: '专属软件',
     herf: '/product',
   }, {
-    text: '雅居系列',
-    herf: '/product',
-  }, {
-    text: '自我系列',
-    herf: '/product',
-  }, {
-    text: '好眠系列',
+    text: 'IT助力',
     herf: '/product',
   }]
 }, {
@@ -96,7 +90,7 @@ const Footer = () => (
         )
       })
     }
-    <img alt="二维码" src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/QR code.jpg" />
+    <img className={'foot-pic'} alt="二维码" src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/QR code.jpg" />
     <style jsx>{`
     .footer{
       justify-content: space-around;
@@ -110,6 +104,11 @@ const Footer = () => (
     .title{
       font-weight:500;
       margin-bottom:16px;
+    }
+
+    .foot-pic{
+      width:108px;
+      height:108px;
     }
 
     @media screen and (min-width: 1200px) {

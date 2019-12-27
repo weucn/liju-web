@@ -2,7 +2,7 @@ import React from 'react';
 import Link from 'next/link'
 
 const headContent = [{
-  title: '女神家',
+  title: '软装云',
   herf: '/',
   content: [{
     text: '品牌简介',
@@ -21,22 +21,16 @@ const headContent = [{
     herf: '/goddesshouse?title=5'
   }]
 }, {
-  title: '产品中心',
+  title: 'IT赋能',
   herf: '/product',
   content: [{
-    text: '极简系列',
+    text: '多元产品',
     herf: '/product',
   }, {
-    text: '乐活系列',
+    text: '专属软件',
     herf: '/product',
   }, {
-    text: '雅居系列',
-    herf: '/product',
-  }, {
-    text: '自我系列',
-    herf: '/product',
-  }, {
-    text: '好眠系列',
+    text: 'IT助力',
     herf: '/product',
   }]
 }, {
@@ -156,7 +150,7 @@ export default function NavigationBar() {
       } 
 
       .mean >li:hover{
-        background-color: #EB6866;
+        background-color: #BE7052;
         color:#fff;
       }
 
@@ -180,13 +174,17 @@ export default function NavigationBar() {
       }
 
       .mean >li > ul >li{
-        background-color: rgba(255,255,255,0.9);
+        opacity: 0.9;
+        background-color: #FFFFFF;
+        border: 1px solid rgba(151,151,151,0.10); 
         height:30px;
         line-height:30px;
       }
 
       .mean >li > ul >li:hover{
-        background-color: rgba(235,104,102,0.8);
+        background-color: #BE7052;
+        border: 1px solid rgba(151,151,151,0.10); 
+        opacity: 0.8;
         color:#fff;
       }
 

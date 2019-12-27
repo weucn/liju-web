@@ -3,7 +3,8 @@ import Layout from '../components/Layout';
 import Link from 'next/link';
 import { Map, Marker } from 'react-amap';
 
-const titles = ["品牌简介", "品牌文化", "市场优势", "发展历程", "联系我们"]
+const titles = ["品牌简介", "市场优势", "发展历程", "联系我们"]
+// const titles = ["品牌简介", "品牌文化", "市场优势", "发展历程", "联系我们"]
 
 const transTitle = (index) => {
   let title = ''
@@ -12,16 +13,16 @@ const transTitle = (index) => {
     default:
       title = "品牌简介"
       break;
+    // case "2":
+    //   title = "品牌文化"
+    //   break;
     case "2":
-      title = "品牌文化"
-      break;
-    case "3":
       title = "市场优势"
       break;
-    case "4":
+    case "3":
       title = "发展历程"
       break;
-    case "5":
+    case "4":
       title = "联系我们"
       break;
   }
@@ -31,29 +32,29 @@ const transTitle = (index) => {
 const article1 = [{
   imgurl: 'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img1.png',
   title: '芯理念',
-  content: '女神家用芯做窗帘，为每一片窗帘植入专属芯片，从生产到安装全部流程溯源跟踪，解决市场价格不透明。服务体验不佳，无法个性化定制等问题，全方位提升消费者的窗帘购物体验。/n女神家尊重每个人的不同人生阶段都有不同的生活方式，推崇积极向上、充满阳光的生活态度，用心去感受，找到适己的生活方式'
+  content: '软装云用芯做窗帘，为每一片窗帘植入专属芯片，从生产到安装全部流程溯源跟踪，解决市场价格不透明。服务体验不佳，无法个性化定制等问题，全方位提升消费者的窗帘购物体验。/n软装云尊重每个人的不同人生阶段都有不同的生活方式，推崇积极向上、充满阳光的生活态度，用心去感受，找到适己的生活方式'
 }, {
   imgurl: 'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img2.png',
   title: '芯设计',
-  content: '女神家设计师团队利用大数据分析系统，根据现代人各个阶段的喜好，结合流行或经典元素，设立五大产品线，共有1000+款不同的设计款式。将设计融入生活的细枝末节，予人“被世界温柔以待”的美好期许。'
+  content: '软装云设计师团队利用大数据分析系统，根据现代人各个阶段的喜好，结合流行或经典元素，设立五大产品线，共有1000+款不同的设计款式。将设计融入生活的细枝末节，予人“被世界温柔以待”的美好期许。'
 }, {
   imgurl: 'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img3.png',
   title: '芯工艺',
-  content: '女神家车间实现无纸化沟通生产流程，一键下单后信息同步至车间。每片窗帘植入专属芯片，流程和质量可追溯。通过流水线的信息化改造，一条流水线从下料到配货约88道工序，制造出不同尺寸、不同原料等个性化定制窗帘。'
+  content: '软装云车间实现无纸化沟通生产流程，一键下单后信息同步至车间。每片窗帘植入专属芯片，流程和质量可追溯。通过流水线的信息化改造，一条流水线从下料到配货约88道工序，制造出不同尺寸、不同原料等个性化定制窗帘。'
 }, {
   imgurl: 'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img4.png',
   title: '芯精神',
-  content: '女神家团队始终秉承精益求精，严苛要求的态度，天工开物，毕纤毫而传神，只为每一片冠以女神家之芯的窗帘都生来有品质之傲。'
+  content: '软装云团队始终秉承精益求精，严苛要求的态度，天工开物，毕纤毫而传神，只为每一片冠以软装云之芯的窗帘都生来有品质之傲。'
 }]
 
 const article3 = [{
   imgurl: 'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img5.png',
   title: '实力派    不奢侈',
-  content: '女神家自有4000平米智能化工厂，有专有的窗帘设计团队，从下料到配货约88道工序，最大限度保证女神家出品的多为品质窗帘，无论是款式、价格都在市场有极强的竞争力。'
+  content: '软装云自有4000平米智能化工厂，有专有的窗帘设计团队，从下料到配货约88道工序，最大限度保证软装云出品的多为品质窗帘，无论是款式、价格都在市场有极强的竞争力。'
 }, {
   imgurl: 'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img6.png',
   title: '硬科技    有品质',
-  content: '女神家自有科技团队，自主研发仓储管理系统WMS、生产制造执行系统MES，以及定制化订单管理系统OMS，实现信息传递零时差、零误差。'
+  content: '软装云自有科技团队，自主研发仓储管理系统WMS、生产制造执行系统MES，以及定制化订单管理系统OMS，实现信息传递零时差、零误差。'
 }, {
   imgurl: 'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img7.png',
   title: '强服务    重体验',
@@ -61,7 +62,7 @@ const article3 = [{
 }, {
   imgurl: 'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img8.png',
   title: '大结局    大追求',
-  content: '女神家致力于用芯改造窗帘行业，打造中国的知名窗帘家居品牌。'
+  content: '软装云致力于用芯改造窗帘行业，打造中国的知名窗帘家居品牌。'
 }]
 
 class Goddesshouse extends Component {
@@ -95,7 +96,7 @@ class Goddesshouse extends Component {
         <div className={'col'}>
           <div className={'layout'}>
             <div className={'title'}>
-              首页-女神家-{title}
+              首页-软装云-{title}
             </div>
             <div className={'row-l vertical-lt'}>
               <div className={'content-title'}>
@@ -154,20 +155,22 @@ class Goddesshouse extends Component {
                         }
                       </div>
                     )
-                  } else if (index === 1) {
-                    return (
-                      <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
-                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img9.png'} />
-                        <h3 className={'fz24'}>女神家</h3>
-                        <p>品牌识别：源自品牌英文名HeartisanHome的开头双H经纬交织而来，创意组合词“Heartisan”是以“heart+air+artisan”三词融合打通，为“梦想艺术品质”，让女神家成为梦想之家的实现者。</p>
-                        <div className={'padding-portrait'}>
-                          <p><b>品牌价值观:</b>无限改进  感动客户  自我实现 诚信  尊重  感恩</p>
-                          <p><b>品牌使命:</b>让窗帘定制变得简单</p>
-                          <p><b>品牌愿景:</b>成为窗帘行业全链路解决方案领跑者</p>
-                        </div>
-                      </div>
-                    )
-                  } else if (index === 2) {
+                  }
+                  // else if (index === 1) {
+                  //   return (
+                  //     <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
+                  //       <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img9.png'} />
+                  //       <h3 className={'fz24'}>软装云</h3>
+                  //       <p>品牌识别：源自品牌英文名HeartisanHome的开头双H经纬交织而来，创意组合词“Heartisan”是以“heart+air+artisan”三词融合打通，为“梦想艺术品质”，让软装云成为梦想之家的实现者。</p>
+                  //       <div className={'padding-portrait'}>
+                  //         <p><b>品牌价值观:</b>无限改进  感动客户  自我实现 诚信  尊重  感恩</p>
+                  //         <p><b>品牌使命:</b>让窗帘定制变得简单</p>
+                  //         <p><b>品牌愿景:</b>成为窗帘行业全链路解决方案领跑者</p>
+                  //       </div>
+                  //     </div>
+                  //   )
+                  // } 
+                  else if (index === 1) {
                     return (
                       <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
                         {
@@ -184,7 +187,7 @@ class Goddesshouse extends Component {
                         }
                       </div>
                     )
-                  } else if (index === 3) {
+                  } else if (index === 2) {
                     return (
                       <div className={item === title ? 'article col' : 'article col article-nodisplay'} key={index}>
                         <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/goddesshouse/content-img10.png'} />
@@ -198,7 +201,7 @@ class Goddesshouse extends Component {
                         </ul>
                       </div>
                     )
-                  } else if (index === 4) {
+                  } else if (index === 3) {
                     return (
                       <div className={item === title ? 'article vertical-lt col' : 'article col vertical-lt article-nodisplay'} key={index}>
                         <div style={{ width: 900, height: 500, marginBottom: 30 }}>
@@ -255,17 +258,17 @@ class Goddesshouse extends Component {
         }
 
         .content-title-back-select{
-          background-image: linear-gradient(270deg, #EB6866 0%, #FF8764 100%);
+          background-color: #BE7052;
         }
 
         .strip{
-          width:66px;
+          width:60px;
           height:2px;
           margin-bottom:2px;
         }
 
         .strip-background{
-          background-color:red;
+          background-color: #BE7052;
         }
 
         .strip-background-select{

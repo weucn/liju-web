@@ -40,18 +40,6 @@ class Home extends Component {
     this.markerPosition = { longitude: 120.5392760000, latitude: 30.1238100000 };
   }
 
-  componentDidMount() {
-    // window.addEventListener('resize', this.handleResize.bind(this)) //监听窗口大小改变
-  }
-
-  componentWillUnmount() { //一定要最后移除监听器，以防多个组件之间导致this的指向紊乱
-    // window.removeEventListener('resize', this.handleResize.bind(this))
-  }
-
-  // handleResize = e => {
-  //   console.log('浏览器窗口大小改变事件', e.target.innerWidth)
-  // }
-
   render() {
     return (
       <Layout>
@@ -60,7 +48,7 @@ class Home extends Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/carousel1.png"
+                src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/carousel1.jpg"
                 alt="First slide"
               />
             </Carousel.Item>
@@ -99,11 +87,11 @@ class Home extends Component {
               <span>芯精神</span>
             </div>
           </div>
-          <iframe src="//player.bilibili.com/player.html?aid=71300213&cid=123540392&page=1&as_wide=1&&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+          <iframe src="//player.bilibili.com/player.html?aid=80464298&cid=137704111&page=1&as_wide=1&&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
         </div>
         <div className={"col main c333"}>
-          <h1 className={"fz28 main-title"}>女神家·有芯的家</h1>
-          <div className={"cccc main-subtitle"}>Heartisan HOME WITH CODE</div>
+          <h1 className={"fz36 main-title c333"}>软装云·芯生态</h1>
+          <div className={"c666 main-subtitle fz14"}>SOFT CLOUD CORE ECOLOGY</div>
           <div className={"main-column cfff"}>
             <div>
               <h2>芯理念·用芯做窗帘</h2>
@@ -122,12 +110,12 @@ class Home extends Component {
             </div>
             <div>
               <h2>芯精神·为品质而生</h2>
-              <span>天工开物，毕纤毫而传神，每片冠以女神家之芯的窗帘生来有品质之傲</span>
+              <span>天工开物，毕纤毫而传神，每片冠以软装云之芯的窗帘生来有品质之傲</span>
               <img alt="芯精神" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/maincolumn/maincolumn4.png' />
             </div>
           </div>
-          <h1 className={"fz28 main-title"}>产品系列</h1>
-          <div className={"cccc main-subtitle"}>PRODUCT SERIES</div>
+          <h1 className={"fz36 main-title c333"}>产品系列</h1>
+          <div className={"c666 main-subtitle fz14"}>PRODUCT SERIES</div>
           <div className="row-l hot">
             <div className="col-t padding-right20 c333 hot-left">
               <div className="hot-title row cfff">
@@ -166,8 +154,8 @@ class Home extends Component {
           </div>
         </div>
         <div className={'col address'}>
-          <h1 className={"fz28"}>公司地址</h1>
-          <div className={"cccc main-subtitle"}>THE COMPANY ADDRESS</div>
+          <h1 className={"fz36 main-title c333"}>联系我们</h1>
+          <div className={"c666 main-subtitle fz14"}>CONTACT US</div>
           <div style={{ marginBottom: 30 }} className="map">
             <Map
               center={this.mapCenter}
@@ -178,7 +166,7 @@ class Home extends Component {
           </div>
           <div className={'fz18 col-t map-CH'}>
             <div>
-              女神家
+              软装云
             </div>
             <div>
               加盟热线：0575-85103188
@@ -192,7 +180,7 @@ class Home extends Component {
           </div>
           <div className={'col-t map-EN'}>
             <div>
-              Heartisan
+              SOFT OUTFIT CLOUD
             </div>
             <div>
               Join hotline: 0575-85103188
@@ -326,7 +314,7 @@ class Home extends Component {
         }
 
         .hot-title1:hover{
-          background: #EB6866;
+          background: #BE7052;
           color: #FFF;
         }
 

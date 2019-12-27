@@ -114,8 +114,16 @@ class Toolkit extends Component {
                           <div className="fz48 c333">微信小程序</div>
                           <div className="fz24 c333">（扫码点击关注小程序）</div>
                         </div>
-                        <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/smallapp.jpg'} className={'img'} />
-                        <div className="fz24 c333">女神家小程序</div>
+                        <div className={'row-l'}>
+                          <div className={'col-t'}>
+                            <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/smallapp1.png'} className={'img'} />
+                            <div className="fz24 c333">软装云后台小程序</div>
+                          </div>
+                          <div className={'col-t'}>
+                            <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/smallapp2.png'} className={'img'} />
+                            <div className="fz24 c333">软装云小程序</div>
+                          </div>
+                        </div>
                       </div>
                     )
                   }
@@ -127,7 +135,7 @@ class Toolkit extends Component {
                           <div className="fz24 c333">（扫码点击关注公众号）</div>
                         </div>
                         <img alt='' src={'https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/toolkit/public.jpg'} className={'img'} />
-                        <div className="fz24 c333">女神家公众号</div>
+                        <div className="fz24 c333">软装云公众号</div>
                       </div>
                     )
                   }
@@ -163,17 +171,17 @@ class Toolkit extends Component {
         }
 
         .content-title-back-select{
-          background-image: linear-gradient(270deg, #EB6866 0%, #FF8764 100%);
+          background-color: #BE7052;
         }
 
         .strip{
-          width:66px;
+          width:60px;
           height:2px;
           margin-bottom:2px;
         }
 
         .strip-background{
-          background-color:red;
+          background-color: #BE7052;
         }
 
         .strip-background-select{
@@ -184,7 +192,7 @@ class Toolkit extends Component {
           margin:0 20px;
           width:900px;
           padding:0;
-          background: rgba(216,216,216,0.10);
+          background-color:#fff;
         }
 
         .article-nodisplay{
