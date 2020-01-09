@@ -210,6 +210,7 @@ class product extends Component {
 
         .body {
           width: 100%;
+          margin:50px;
         }
 
         .body>.module {
@@ -221,7 +222,7 @@ class product extends Component {
 
         .module-title{
           font-size: 30px;
-          margin-bottom: 20px;
+          margin-bottom: 10px;
         }
 
         .module-title-EN{
