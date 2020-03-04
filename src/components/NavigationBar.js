@@ -6,13 +6,13 @@ const headContent = [{
   herf: '/',
   content: [{
     text: '销售软件',
-    herf: '/product'
+    herf: '/sales'
   }, {
     text: 'MES',
-    herf: '/product'
+    herf: '/sales'
   }, {
     text: 'OMS',
-    herf: '/product'
+    herf: '/sales'
   }]
 }, {
   title: '公司简介',
