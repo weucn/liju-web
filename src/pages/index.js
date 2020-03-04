@@ -1,44 +1,8 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
 import { Carousel } from 'react-bootstrap';
-import { Map, Marker } from 'react-amap';
-
-const titles = ["极简系列", "乐活系列", "自我系列", "雅居系列", "好眠系列"]
-
-const image1 = [
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/极简/1.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/乐活/1.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/自我/1.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/雅居/1.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/好眠/1.jpg"
-]
-
-const image2 = [
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/极简/2.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/乐活/2.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/自我/2.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/雅居/2.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/好眠/2.jpg"
-]
-
-const image3 = [
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/极简/3.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/乐活/3.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/自我/3.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/雅居/3.jpg",
-  "https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/product/好眠/3.jpg"
-]
 
 class Home extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      index: 0
-    };
-    this.onChange = this.onChange.bind(this);
-    this.mapCenter = { longitude: 120.5392760000, latitude: 30.1238100000 };
-    this.markerPosition = { longitude: 120.5392760000, latitude: 30.1238100000 };
-  }
 
   render() {
     return (
@@ -48,11 +12,11 @@ class Home extends Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/carousel1.jpg"
+                src="../../static/home/banner.png"
                 alt="First slide"
               />
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <img
                 className="d-block w-100"
                 src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/carousel2.jpg"
@@ -65,133 +29,71 @@ class Home extends Component {
                 src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/carousel3.jpg"
                 alt="Third slide"
               />
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
         </div>
         <div className={'col content cfff'}>
-          <div className={'row w-100 row column fz24'}>
-            <div>
-              <img alt="芯理念" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/column/column1.png' />
-              <span>芯理念</span>
-            </div>
-            <div>
-              <img alt="芯设计" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/column/column2.png' />
-              <span>芯设计</span>
-            </div>
-            <div>
-              <img alt="芯工艺" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/column/column3.png' />
-              <span>芯工艺</span>
-            </div>
-            <div>
-              <img alt="芯精神" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/column/column4.png' />
-              <span>芯精神</span>
+          <img alt="sales" src="../../static/home/sales.png" className={'background-img'} />
+          <div className={'col-t sales-title w100'}>
+            <h1>销售系统软件</h1>
+            <div className={'fz24'}>Sales system software</div>
+            <div className={'row-sa w100 sale-pic'}>
+              <div className={'col-t vertical-lt'}>
+                <img alt="1" src="../../static/home/sale1.png" />
+                <div className={'fz36'}>B端用户APP服务</div>
+                <div className={'fz24'}>软装专属APP</div>
+                <div className={'fz24'}>查看更多 ></div>
+              </div>
+              <div className={'col-t vertical-lt'}>
+                <img alt="2" src="../../static/home/sale2.png" />
+                <div className={'fz36'}>C端用户小程序服务</div>
+                <div className={'fz24'}>软装专属APP关联小程序</div>
+                <div className={'fz24'}>查看更多 ></div>
+              </div>
+              <div className={'col-t vertical-lt'}>
+                <img alt="3" src="../../static/home/sale3.png" />
+                <div className={'fz36'}>B端用户网页服务</div>
+                <div className={'fz24'}>软装专属后台管理软件</div>
+                <div className={'fz24'}>查看更多 ></div>
+              </div>
             </div>
           </div>
-          <iframe src="//player.bilibili.com/player.html?aid=80464298&cid=137704111&page=1&as_wide=1&&high_quality=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
         </div>
         <div className={"col main c333"}>
-          <h1 className={"fz36 main-title c333"}>软装云·芯生态</h1>
-          <div className={"c666 main-subtitle fz14"}>SOFT CLOUD CORE ECOLOGY</div>
-          <div className={"main-column cfff"}>
-            <div>
-              <h2>芯理念·用芯做窗帘</h2>
-              <span>为每一片窗帘植入专属芯片，从生产到安装全流程溯源跟踪</span>
-              <img alt="芯理念" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/maincolumn/maincolumn1.png' />
-            </div>
-            <div>
-              <h2>芯设计·悦己先悦居</h2>
-              <span>利用大数据分析结合不同人群喜好，设立五大产品线10000+款设计款式</span>
-              <img alt="芯设计" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/maincolumn/maincolumn2.png' />
-            </div>
-            <div>
-              <h2>芯工艺·可溯源窗帘</h2>
-              <span>从下料到配货共计88道工序，每片窗帘的工序流程和质量都可追溯</span>
-              <img alt="芯工艺" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/maincolumn/maincolumn3.png' />
-            </div>
-            <div>
-              <h2>芯精神·为品质而生</h2>
-              <span>天工开物，毕纤毫而传神，每片冠以软装云之芯的窗帘生来有品质之傲</span>
-              <img alt="芯精神" src='https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/maincolumn/maincolumn4.png' />
-            </div>
-          </div>
-          <h1 className={"fz36 main-title c333"}>产品系列</h1>
-          <div className={"c666 main-subtitle fz14"}>PRODUCT SERIES</div>
-          <div className="row-l hot">
-            <div className="col-t padding-right20 c333 hot-left">
-              <div className="hot-title row cfff">
-                <h2>产品系列</h2>
+          <h1 className={"fz36 main-title c333"}>MES（制造企业生产过程执行管理系统）</h1>
+          <div className={"c666 main-subtitle fz24"}>Manufacturing process execution management system</div>
+          <div className={"main-column row-sa w100"}>
+            <div className={'col-sa fz28 c333'}>
+              工控机
+              <img className={'PC'} alt="Industrial-PC" src="../../static/home/Industrial-PC.png" />
+              <div className={'col-t'}>
+                <div className={'fz20 c333'}>为工业现场二设计的计算机</div>
+                <div className={'fz16 c999 content-padding'}>查看更多 ></div>
               </div>
-              {
-                titles.map((item, index) => {
-                  return (
-                    <div className="hot-title1 row cursor-pointer" onClick={() => this.onChange(item, index)}>
-                      <div className="col">
-                        <h5>{item}</h5>
-                        <div className="fz12">CLICK TO ENTER</div>
-                      </div>
-                    </div>
-                  )
-                })
-              }
             </div>
-            {
-              titles.map((item, index) => {
-                if (index === this.state.index) {
-                  return (
-                    <div className="row-l" key={index}>
-                      <div className="padding-right20">
-                        <img className="hot-img1" alt={item} src={image1[index]}></img>
-                      </div>
-                      <div className="col-t">
-                        <img className="hot-img2" alt={item} src={image2[index]}></img>
-                        <img className="hot-img3" alt={item} src={image3[index]}></img>
-                      </div>
-                    </div>
-                  )
-                }
-              })
-            }
+            <div className={'col-sa PDA fz28 cfff'}>
+              PDA
+            <img className={'PDA-img'} alt="PDA" src="../../static/home/PDA.png" />
+              <div className={'col-t'}>
+                <div className={'fz20 cfff'}>让仓库信息化管理成为了现实</div>
+                <div className={'fz16 cfff content-padding'}>查看更多 ></div>
+              </div>
+            </div>
+            <div className={'col-sa fz28 c333'}>
+              订单处理软件
+              <img className={'order'} alt="order" src="../../static/home/order.png" />
+              <div className={'col-t'}>
+                <div className={'fz20 c333'}>让信息处理变得更加简单</div>
+                <div className={'fz16 c999 content-padding'}>查看更多 ></div>
+              </div>
+            </div>
           </div>
         </div>
-        <div className={'col address'}>
-          <h1 className={"fz36 main-title c333"}>联系我们</h1>
-          <div className={"c666 main-subtitle fz14"}>CONTACT US</div>
-          <div style={{ marginBottom: 30 }} className="map">
-            <Map
-              center={this.mapCenter}
-              zoom={16}
-            >
-              <Marker position={this.markerPosition} />
-            </Map>
-          </div>
-          <div className={'fz18 col-t map-CH'}>
-            <div>
-              软装云
-            </div>
-            <div>
-              加盟热线：0575-85103188
-            </div>
-            <div>
-              生产中心地址：浙江省绍兴市齐贤镇中意企业北门7号
-            </div>
-            <div>
-              销售研发中心：浙江省绍兴市柯桥区黄社溇路银座国际商务中心
-            </div>
-          </div>
-          <div className={'col-t map-EN'}>
-            <div>
-              SOFT OUTFIT CLOUD
-            </div>
-            <div>
-              Join hotline: 0575-85103188
-            </div>
-            <div>
-              Production center address: zhejiang shaoxing qixian town zhongyi enterprise north gate 7
-            </div>
-            <div>
-              Sales r & d center: yinza international business center, huangshelou road, keqiao district, shaoxing city, zhejiang province
-            </div>
-          </div>
+        <div className={'col OMS'}>
+          <img alt="OMS" src="../../static/home/6.jpg" className={'background-img'} />
+          <h1 className={"fz36 main-title cfff"}>OMS  使仓储、运输、订单成为一个有机整体，满足物流系统信息化的需求</h1>
+          <div className={"cfff main-subtitle fz24"}>订单处理系统  让信息处理变得更加简单</div>
+          <div className={'fz24 cfff content-padding'}>查看更多 ></div>
         </div>
         <style jsx>{`
         .margin-bottom{
@@ -203,10 +105,47 @@ class Home extends Component {
         }
 
         .content{
-          padding:54px 0;
-          background: rgba(0,0,0,0.05);
+          padding:0;
         }
 
+        .background-img{
+          width:100%;
+          z-index:-1;
+          position:absolute;
+          top:0px;
+          background:#000;
+        }
+        
+        .sales-title{
+          padding:100px 100px;
+        }
+
+        .sale-pic{
+          margin-top:47px;
+        }
+
+        .sale-pic>div{
+      	  width: 320px;
+        }
+        img{
+          width:100%;
+          height:100%;
+        }
+
+        .PC{
+          width:50%;
+          height:30%;
+        }
+      
+        .PDA-img{
+          width:40%;
+          height:30%;
+        }
+        .order{
+          width:40%;
+          height:30%;
+        }
+        
         .column{
           max-width:1040px;
           padding-bottom:45px;
@@ -255,10 +194,6 @@ class Home extends Component {
           width:50%;
         }
 
-        .main{
-
-        }
-
         .main-title{
           margin-top:60px;
         }
@@ -271,69 +206,13 @@ class Home extends Component {
           max-width:1200px;
         }
 
+        .PDA{
+          background: #4C506F;
+        }
+
         .main-column>div{
-          position:relative;
-          margin-top:38px;
-        }
-
-        .main-column>div:first-child{
-          margin-top:0px;
-        }
-
-        .main-column>div>h2,.main-column>div>span{
-          position:absolute;
-          width:100%;
-          text-align: center;
-        }
-
-        .main-column>div>h2{
-          top:200px;
-          font-size:48px;
-        }
-
-        .main-column>div>span{
-          top:270px;
-          font-size:18px;
-        }
-
-        .hot-left{
-          width:230px;
-        }
-
-        .hot-title{
-          height:100px;
-          width:210px;
-          font-weight:bold;
-          background: #999999;
-        }
-
-        .hot-title1{
-          height:80px;
-          width:210px;
-          background: #F4F4F4;
-        }
-
-        .hot-title1:hover{
-          background: #BE7052;
-          color: #FFF;
-        }
-
-        .hot-img1{
-          width:600px;
-          height:500px;
-        }
-
-        .hot-img2,.hot-img3{
-          height:240px;
-          width:349px;
-        }
-
-        .hot-img2{
-          margin-bottom:20px;
-        }
-
-        .hot-img-bottom{
-          margin:0;
+          width:480px;
+          height:607px;
         }
 
         .map{
@@ -341,10 +220,10 @@ class Home extends Component {
           height: 500px;
         }
 
-        .address{
+        .OMS{
+          height: 800px;
           background: rgba(0,0,0,0.05);
-          padding:60px 0px 20px 0px;
-          margin-top:20px;
+          padding:0px;
         }
 
         @media screen and (max-width: 767px) {

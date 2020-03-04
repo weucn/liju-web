@@ -4,17 +4,23 @@ import React, { Fragment } from 'react';
 import Head from 'next/head'
 import NavigationBar from '../components/NavigationBar';
 import Footer from '../components/Footer';
+import { Icon } from 'antd';
 
+const copyright = (
+  <a className="cursor-pointer" href="http://www.beian.gov.cn/portal/registerSystemInfo">
+    Copyright <Icon type="copyright" /> 2020 绍兴力聚信息科技有限公司
+  </a>
+);
 const Layout = props => (
   <Fragment>
     <Head>
-      <title>Heartisan 芯云软装</title>
+      <title>力聚科技</title>
       <meta http-equiv="Content-Type" content="text/html;charset=utf-8"></meta>
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"></meta>
       <meta name="viewport" content="initial-scale=1.0, width=device-width" key="viewport" />
-      <link rel="shortcut icon" href="./static/logo.ico" />
-      <meta name="author" content="浙江芯云家居科技"></meta>
-      <meta name="keywords" content="芯云,芯云软装,Heartisan,heartisan,软装云平台,设计师共享服务网络,海量软装供应链入驻平台。" />
+      <link rel="shortcut icon" href="./static/logo1.ico" />
+      <meta name="author" content="绍兴力聚科技信息有限公司"></meta>
+      <meta name="keywords" content="力聚,力聚科技,LJKJ,ljkj,软装家居,软装平台,家居家具,设计师共享服务网络,海量软装供应链入驻平台。" />
       <meta name="description" content="提供窗帘墙布背景,挂画,地毯,家纺,床上用品,小布艺,沙发垫,桌布,餐垫家居饰品,花瓶,干花,花艺,家具等优质供应链。同时,软装设计师创业者共享本地服务体验中心,配套上门设计服务,享有厂家与商家双重保障。"></meta>
       <link
         rel="stylesheet"
@@ -41,6 +47,9 @@ const Layout = props => (
       {props.children}
     </div>
     <Footer />
+    <div className={'row bg-c000'}>
+      {copyright}
+    </div>
     <style global jsx>{`
       body {
         margin: 0px;
@@ -86,6 +95,13 @@ const Layout = props => (
         justify-content: space-between;
         align-items: center;
       }
+
+      .row-sa {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+      }
       
       .col {
         display: flex;
@@ -105,6 +121,13 @@ const Layout = props => (
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        align-items: center;
+      }
+
+      .col-sa {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
         align-items: center;
       }
       
@@ -226,6 +249,18 @@ const Layout = props => (
       
       .fz28 {
         font-size: 28px;
+      }
+
+      .fz30 {
+        font-size: 30px;
+      }
+
+      .fz32 {
+        font-size: 32px;
+      }
+
+      .fz36 {
+        font-size: 36px;
       }
 
       .fz48 {

@@ -2,84 +2,95 @@ import React from 'react';
 import Link from 'next/link'
 
 const footContent = [{
-  title: '软装云',
+  title: '首页',
   herf: '/',
   content: [{
-    text: '品牌简介',
-    herf: '/goddesshouse?title=1'
+    text: '销售软件',
+    herf: '/'
   }, {
-    text: '品牌文化',
-    herf: '/goddesshouse?title=2'
+    text: 'MES',
+    herf: '/'
   }, {
-    text: '市场优势',
-    herf: '/goddesshouse?title=3'
-  }, {
-    text: '发展历程',
-    herf: '/goddesshouse?title=4'
-  }, {
-    text: '联系我们',
-    herf: '/goddesshouse?title=5'
+    text: 'OMS',
+    herf: '/'
   }]
 }, {
-  title: 'IT赋能',
-  herf: '/product',
+  title: '公司简介',
+  herf: '/',
+  // herf: '/product',
   content: [{
-    text: '多元产品',
-    herf: '/product',
+    text: '公司文化',
+    herf: '/',
   }, {
-    text: '专属软件',
-    herf: '/product',
+    text: '公司成员',
+    herf: '/',
   }, {
-    text: 'IT助力',
-    herf: '/product',
+    text: '公司发展',
+    herf: '/',
   }]
 }, {
-  title: '加盟中心',
-  herf: '/alliance?title=1',
+  title: '销售系统',
+  herf: '/',
+  // herf: '/alliance?title=1',
   content: [{
-    text: '加盟支持',
-    herf: '/alliance?title=1'
+    text: 'APP软件',
+    herf: '/'
   }, {
-    text: '加盟申请',
-    herf: '/alliance?title=2'
+    text: '微信小程序',
+    herf: '/'
+  }, {
+    text: '订单处理软件',
+    herf: '/'
   }]
 }, {
-  title: '新闻中心',
-  herf: '/news',
+  title: 'MES',
+  herf: '/',
+  // herf: '/news',
   content: [{
-    text: '行业发展',
-    herf: '/news?title=1'
+    text: '工控机',
+    herf: '/'
   }, {
-    text: '公司资讯',
-    herf: '/news?title=2'
+    text: 'PDA',
+    herf: '/'
+  }, {
+    text: '订单处理',
+    herf: '/'
   }]
 }, {
-  title: '工具包',
-  herf: '/toolkit?title=1',
+  title: 'OMS',
+  herf: '/',
+  // herf: '/toolkit?title=1',
   content: [{
-    text: 'APP下载',
-    herf: '/toolkit?title=1'
+    text: '订单处理',
+    herf: '/'
+  }]
+}, {
+  title: '联系我们',
+  herf: '/',
+  content: [{
+    text: '渠道合作',
+    herf: '/'
   }, {
-    text: '小程序',
-    herf: '/toolkit?title=2'
+    text: '项目合作',
+    herf: '/'
   }, {
-    text: '微信公众号',
-    herf: '/toolkit?title=3'
+    text: '战略合作',
+    herf: '/'
   }]
 }]
 
 const Footer = () => (
-  <footer className={'row footer c333 vertical-lt no-select'}>
+  <footer className={'row-l footer cfff vertical-lt'}>
     {
       footContent.map((item, index) => {
         return (
           <div className={'col'} key={index}>
-            <div className="title">{item.title}</div>
+            <div className="title fz24">{item.title}</div>
             {
               item.content.map((cItem, cIndex) => {
                 return (
                   <Link href={cItem.herf} key={cIndex}>
-                    <div className={'fz14 cursor-pointer'}>
+                    <div className={'fz16 cursor-pointer'}>
                       {cItem.text}
                     </div>
                   </Link>
@@ -90,15 +101,13 @@ const Footer = () => (
         )
       })
     }
-    <img className={'foot-pic'} alt="二维码" src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/QR code.jpg" />
     <style jsx>{`
     .footer{
+      height:400px;
       justify-content: space-around;
-      background-color: #F5F5F5;
+      background-color: #000;
       margin:0;
-      margin-top:40px;
-      padding-top:40px;
-      padding-bottom:40px;
+      padding:73px 240px;
     }
 
     .title{
@@ -106,17 +115,12 @@ const Footer = () => (
       margin-bottom:16px;
     }
 
-    .foot-pic{
-      width:108px;
-      height:108px;
-    }
-
-    @media screen and (min-width: 1200px) {
-      .footer{
-        padding-left:calc((100% - 1200px)/2);
-        padding-right:calc((100% - 1200px)/2);
-      }
-    }
+    // @media screen and (min-width: 1200px) {
+    //   .footer{
+    //     padding-left:calc((100% - 1200px)/2);
+    //     padding-right:calc((100% - 1200px)/2);
+    //   }
+    // }
 
     @media screen and (max-width:1200px) and (min-width:768px){
       .footer{

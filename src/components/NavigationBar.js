@@ -2,72 +2,80 @@ import React from 'react';
 import Link from 'next/link'
 
 const headContent = [{
-  title: '软装云',
+  title: '首页',
   herf: '/',
   content: [{
-    text: '品牌简介',
-    herf: '/goddesshouse?title=1'
+    text: '销售软件',
+    herf: '/product'
   }, {
-    text: '品牌文化',
-    herf: '/goddesshouse?title=2'
+    text: 'MES',
+    herf: '/product'
   }, {
-    text: '市场优势',
-    herf: '/goddesshouse?title=3'
-  }, {
-    text: '发展历程',
-    herf: '/goddesshouse?title=4'
-  }, {
-    text: '联系我们',
-    herf: '/goddesshouse?title=5'
+    text: 'OMS',
+    herf: '/product'
   }]
 }, {
-  title: 'IT赋能',
-  herf: '/product',
+  title: '公司简介',
+  herf: '/culture',
+  // herf: '/product',
   content: [{
-    text: '多元产品',
-    herf: '/product',
+    text: '公司文化',
+    herf: '/culture',
   }, {
-    text: '专属软件',
-    herf: '/product',
+    text: '公司成员',
+    herf: '/culture',
   }, {
-    text: 'IT助力',
-    herf: '/product',
+    text: '公司发展',
+    herf: '/culture',
   }]
 }, {
-  title: '加盟中心',
-  herf: '/alliance?title=1',
+  title: '销售系统',
+  herf: '/sales',
+  // herf: '/alliance?title=1',
   content: [{
-    text: '加盟支持',
-    herf: '/alliance?title=1'
+    text: 'APP软件',
+    herf: '/sales'
   }, {
-    text: '加盟申请',
-    herf: '/alliance?title=2'
+    text: '微信小程序',
+    herf: '/sales'
   }, {
-    text: '全国加盟店',
-    herf: '/alliance?title=3'
+    text: '订单处理',
+    herf: '/sales'
   }]
 }, {
-  title: '新闻中心',
-  herf: '/news',
+  title: 'MES',
+  herf: '/mes',
+  // herf: '/news',
   content: [{
-    text: '行业发展',
-    herf: '/news?title=1'
+    text: '工控机',
+    herf: '/mes'
   }, {
-    text: '公司资讯',
-    herf: '/news?title=2'
+    text: 'PDA',
+    herf: '/mes'
+  }, {
+    text: '订单处理',
+    herf: '/mes'
   }]
 }, {
-  title: '工具包',
-  herf: '/toolkit?title=1',
+  title: 'OMS',
+  herf: '/oms',
+  // herf: '/toolkit?title=1',
   content: [{
-    text: 'APP下载',
-    herf: '/toolkit?title=1'
+    text: '订单处理',
+    herf: '/oms'
+  }]
+}, {
+  title: '联系我们',
+  herf: '/contact',
+  content: [{
+    text: '渠道合作',
+    herf: '/contact'
   }, {
-    text: '小程序',
-    herf: '/toolkit?title=2'
+    text: '项目合作',
+    herf: '/contact'
   }, {
-    text: '微信公众号',
-    herf: '/toolkit?title=3'
+    text: '战略合作',
+    herf: '/contact'
   }]
 }]
 
@@ -75,10 +83,8 @@ export default function NavigationBar() {
   return (
     <div className={'row bar'}>
       <nav className={'row nav'}>
-        <div className="nav-img">
-          <Link href={'/'}>
-            <img className={'logo cursor-pointer'} src="https://ljkj-temp.oss-cn-hangzhou.aliyuncs.com/heartisan/logo.png" alt="my image" />
-          </Link>
+        <div className={'row title'}>
+          <div>力聚科技</div>
         </div>
         <ul className={'row mean cursor-default'}>
           {
@@ -106,9 +112,9 @@ export default function NavigationBar() {
             })
           }
         </ul>
-        <div className={'nav-tail'}>
+        {/* <div className={'nav-tail'}>
           加盟热线：0575-85103188
-        </div>
+        </div> */}
       </nav>
       <style jsx>{`
       .bar{
@@ -117,41 +123,54 @@ export default function NavigationBar() {
         left:0;
         top:0;
         border:#fff;
-        background: #fcfcfc;
-        box-shadow: 0 2px 8px rgba(0,0,0,.4);
+        background: #000;
         margin:0;
       }
 
-      
-
       .nav {
         justify-content: space-between;
-        align-items:baseline;
         width:1200px;
-        padding:0 60px;
         height:60px;
         margin:0
       }
 
       .logo{
-        width:117px;
+        width:50px;
       }
 
-      .mean li{
-        width:100px;
-        list-style-type:none;
-        text-align:center ;
+      .title{
+        font-size:20px;
+        background:#fff;
+        padding:4px 12px;
+        user-select: none;
+      }
+
+      .mean{
+        margin:0;
+        padding:0;
+        width:700px;
+        height:60px;
+        line-height:60px;
+        justify-content: space-between;
       }
 
       .mean >li{
-        position: relative;
+        width:80px;
         height:60px;
-        line-height: 60px;
+        line-height:60px;
+        list-style-type:none;
+        text-align:center ;
+        color:#fff;
+        font-size:16px;
+        margin-left: 20px;
+        position: relative;
       } 
 
       .mean >li:hover{
-        background-color: #BE7052;
-        color:#fff;
+        height:60px;
+        line-height:60px;
+        font-size:20px;
+        border-bottom:2px solid #fff;
       }
 
       .mean >li > ul{
@@ -160,6 +179,7 @@ export default function NavigationBar() {
         left:0;
         top:60px;
         display: none;
+        list-style-type:none;
       }
 
       .mean >li:hover > ul{
@@ -168,24 +188,25 @@ export default function NavigationBar() {
       }
 
       .mean >li > ul >li{
-        height:30px;
-        line-height:30px;
-        font-size:14px;
+        height:60px;
+        line-height:60px;
+        width:80px;
+        font-size:15px;
       }
 
       .mean >li > ul >li{
         opacity: 0.9;
         background-color: #FFFFFF;
         border: 1px solid rgba(151,151,151,0.10); 
-        height:30px;
-        line-height:30px;
+        height:60px;
+        line-height:60px;
       }
 
       .mean >li > ul >li:hover{
-        background-color: #BE7052;
+        background-color: #fff;
         border: 1px solid rgba(151,151,151,0.10); 
         opacity: 0.8;
-        color:#fff;
+        color:#000;
       }
 
       @media screen and (min-width: 1200px) {
