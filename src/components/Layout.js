@@ -7,8 +7,8 @@ import Footer from '../components/Footer';
 import { Icon } from 'antd';
 
 const copyright = (
-  <a className="cursor-pointer cfff" href="http://www.beian.gov.cn/portal/registerSystemInfo">
-    Copyright <Icon type="copyright" /> 2020 绍兴力聚信息科技有限公司
+  <a className="cursor-pointer cfff fz14" href="http://www.beian.miit.gov.cn">
+    网站备案：浙ICP备17044703号-6
   </a>
 );
 const Layout = props => (
@@ -47,7 +47,7 @@ const Layout = props => (
       {props.children}
     </div>
     <Footer />
-    <div className={'row bg-c000'}>
+    <div className={'row bg-c000 content-padding'}>
       {copyright}
     </div>
     <style global jsx>{`

@@ -103,7 +103,7 @@ const Footer = () => (
     }
     <style jsx>{`
     .footer{
-      height:400px;
+      height:300px;
       justify-content: space-around;
       background-color: #000;
       margin:0;
