@@ -10,12 +10,12 @@ module.exports = withCSS({
   exportPathMap: async function () {
     const paths = {
       '/': { page: '/' },
-      '/goddesshouse': { page: '/goddesshouse' },
-      '/product': { page: '/product' },
-      '/alliance': { page: '/alliance' },
-      '/news': { page: '/news' },
-      '/post': { page: '/post' },
-      '/toolkit': { page: '/toolkit' },
+      '/contact': { page: '/contact' },
+      '/culture': { page: '/culture' },
+      '/index': { page: '/index' },
+      '/mes': { page: '/mes' },
+      '/oms': { page: '/oms' },
+      '/sales': { page: '/sales' },
       '/policy': { page: '/policy' }
     };
     return paths;

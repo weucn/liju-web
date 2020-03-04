@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import { Icon } from 'antd';
 
 const copyright = (
-  <a className="cursor-pointer" href="http://www.beian.gov.cn/portal/registerSystemInfo">
+  <a className="cursor-pointer cfff" href="http://www.beian.gov.cn/portal/registerSystemInfo">
     Copyright <Icon type="copyright" /> 2020 绍兴力聚信息科技有限公司
   </a>
 );
