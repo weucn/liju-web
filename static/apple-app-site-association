@@ -1,0 +1,9 @@
+{
+    "applinks": {
+        "apps": ["软装云"],
+        "details": [{
+            "appID": "org.lijukeji.nvshenjia",
+            "paths": ["*"]
+        }]
+    }
+}
