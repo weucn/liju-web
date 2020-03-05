@@ -8,9 +8,9 @@ class Mes extends Component {
             <Layout>
                 <div className={'col culture'}>
                     <div className={'layout'}>
-                        <img className={'w-100'} alt="banner" src="../../static/home/banner.png" />
+                        <img className={'w-100'} alt="banner" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/banner.png" />
                         <div className={'background col cfff'}>
-                            <img alt="bg" src="../../static/mes/5.jpg" className={'background-img'} />
+                            <img alt="bg" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/mes/5.jpg" className={'background-img'} />
                             <div className={'content col'}>
                                 <span className={'fz36'}>工控机    为工业现场而设计的计算机</span>
                                 <span className={'fz24'}>当然面料品控这块不能只靠供应商方面来解决，HeartisanHome内部也有一套品控流程：</span>
@@ -18,7 +18,7 @@ class Mes extends Component {
                             </div>
                         </div>
                         <div className={'background col cfff'}>
-                            <img alt="bg" src="../../static/mes/4.jpg" className={'background-img'} />
+                            <img alt="bg" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/mes/4.jpg" className={'background-img'} />
                             <div className={'content col'}>
                                 <span className={'fz36'}>PDA  让仓库信息化管理成为了现实</span>
                                 <span className={'fz24'}>每片窗帘都有自己的一个专属芯片，犹如身份证。</span>
@@ -27,7 +27,7 @@ class Mes extends Component {
                             </div>
                         </div>
                         <div className={'background col cfff'}>
-                            <img alt="bg" src="../../static/mes/6.jpg" className={'background-img'} />
+                            <img alt="bg" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/mes/6.jpg" className={'background-img'} />
                             <div className={'content col'}>
                                 <span className={'fz36'}>订单处理系统  让信息处理变得更加简单</span>
                                 <span className={'fz24'}>一个完成生产进度的ERP系统，显示了每天需要发货的数量。</span>

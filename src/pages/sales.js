@@ -8,9 +8,9 @@ class Sales extends Component {
       <Layout>
         <div className={'col culture'}>
           <div className={'layout'}>
-            <img className={'w-100'} alt="banner" src="../../static/home/banner.png" />
+            <img className={'w-100'} alt="banner" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/banner.png" />
             <div className={'background col cfff'}>
-              <img alt="bg" src="../../static/sales/3.jpg" className={'background-img'} />
+              <img alt="bg" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/sales/3.jpg" className={'background-img'} />
               <div className={'content col'}>
                 <span className={'fz36'}>B端用户APP用户</span>
                 <span className={'fz24'}>商家App是集研发、生产、销售为一体的软装行业赋能平台，以信息化智能体系连接销售、设计、</span>
@@ -19,7 +19,7 @@ class Sales extends Component {
               </div>
             </div>
             <div className={'background col cfff'}>
-              <img alt="bg" src="../../static/sales/2.jpg" className={'background-img'} />
+              <img alt="bg" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/sales/2.jpg" className={'background-img'} />
               <div className={'content col'}>
                 <span className={'fz36'}>C端用户小程序服务</span>
                 <span className={'fz24'}>消费者专属小程序是集研发、销售为一体的软装行业赋能平台，以信息化智能体系连接销售、设计为软装行业</span>
@@ -28,7 +28,7 @@ class Sales extends Component {
               </div>
             </div>
             <div className={'background col cfff'}>
-              <img alt="bg" src="../../static/sales/7.jpg" className={'background-img'} />
+              <img alt="bg" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/sales/7.jpg" className={'background-img'} />
               <div className={'content col'}>
                 <span className={'fz36'}>B端用户订单处理网页软件</span>
                 <span className={'fz24'}>一个完成生产进度的ERP系统，显示了每天需要发货的数量。各个岗位的主管，</span>

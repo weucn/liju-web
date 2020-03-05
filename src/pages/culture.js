@@ -7,9 +7,9 @@ class Culture extends Component {
       <Layout>
         <div className={'col culture'}>
           <div className={'layout'}>
-            <img className={'w-100'} alt="banner" src="../../static/home/banner.png" />
+            <img className={'w-100'} alt="banner" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/banner.png" />
             <div className={'background col cfff'}>
-              <img alt="bg" src="../../static/culture/1.jpg" className={'background-img'} />
+              <img alt="bg" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/culture/1.jpg" className={'background-img'} />
               <div className={'content col'}>
                 <span className={'fz36'}>公司简介</span>
                 <span className={'fz24'}>绍兴力聚信息科技有限公司成立于2016年10月11日，</span>
@@ -29,10 +29,10 @@ class Culture extends Component {
                   <div className={'fz24 padding'}>浙江大学硕士</div>
                   <div className={'fz24 padding'}>柔性供应链系统总架构师</div>
                 </div>
-                <img alt="1" src="../../static/culture/yj.jpg" className={'culture-img'}/>
+                <img alt="1" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/culture/yj.jpg" className={'culture-img'}/>
               </div>
               <div className={'row-sa staff-body c333'}>
-                <img alt="2" src="../../static/culture/hhj.jpg" />
+                <img alt="2" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/culture/hhj.jpg" />
                 <div className={'clo-sa'}>
                   <div className={'fz32 padding'}>黄汉军</div>
                   <div className={'underline'}></div>
@@ -47,11 +47,11 @@ class Culture extends Component {
                   <div className={'fz24 padding'}>东南大学硕士</div>
                   <div className={'fz24 padding'}>销售与营销系统项目开发经理</div>
                 </div>
-                <img alt="3" src="../../static/culture/lt.jpg" />
+                <img alt="3" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/culture/lt.jpg" />
               </div>
             </div>
             <div className={'background col cfff'}>
-              <img alt="bg" src="../../static/culture/1.jpg" className={'background-img'} />
+              <img alt="bg" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/culture/1.jpg" className={'background-img'} />
               <div className={'content col'}>
                 <span className={'fz36'}>企业文化</span>
                 <span className={'fz24'}>企业定位：融合物联网整体解决方案提供商</span>

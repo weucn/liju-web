@@ -12,7 +12,7 @@ class Home extends Component {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="../../static/home/banner.png"
+                src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/banner.png"
                 alt="First slide"
               />
             </Carousel.Item>
@@ -33,28 +33,28 @@ class Home extends Component {
           </Carousel>
         </div>
         <div className={'col content cfff'}>
-          <img alt="sales" src="../../static/home/sales.png" className={'background-img'} />
+          <img alt="sales" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/sales.png" className={'background-img'} />
           <div className={'col-t sales-title w100'}>
             <h1>销售系统软件</h1>
             <div className={'fz24'}>Sales system software</div>
             <div className={'row-sa w100 sale-pic'}>
               <div className={'col-t vertical-lt'}>
-                <img alt="1" src="../../static/home/sale1.png" />
+                <img alt="1" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/sale1.png" />
                 <div className={'fz36'}>B端用户APP服务</div>
                 <div className={'fz24'}>软装专属APP</div>
-                <div className={'fz24'}>查看更多 ></div>
+                <a className={'fz24 cfff'} href="./sales">查看更多 ></a>
               </div>
               <div className={'col-t vertical-lt'}>
-                <img alt="2" src="../../static/home/sale2.png" />
+                <img alt="2" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/sale2.png" />
                 <div className={'fz36'}>C端用户小程序服务</div>
                 <div className={'fz24'}>软装专属APP关联小程序</div>
-                <div className={'fz24'}>查看更多 ></div>
+                <a className={'fz24 cfff'} href="./sales">查看更多 ></a>
               </div>
               <div className={'col-t vertical-lt'}>
-                <img alt="3" src="../../static/home/sale3.png" />
+                <img alt="3" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/sale3.png" />
                 <div className={'fz36'}>B端用户网页服务</div>
                 <div className={'fz24'}>软装专属后台管理软件</div>
-                <div className={'fz24'}>查看更多 ></div>
+                <a className={'fz24 cfff'} href="./sales">查看更多 ></a>
               </div>
             </div>
           </div>
@@ -65,35 +65,35 @@ class Home extends Component {
           <div className={"main-column row-sa w100"}>
             <div className={'col-sa fz28 c333'}>
               工控机
-              <img className={'PC'} alt="Industrial-PC" src="../../static/home/Industrial-PC.png" />
+              <img className={'PC'} alt="Industrial-PC" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/Industrial-PC.png" />
               <div className={'col-t'}>
                 <div className={'fz20 c333'}>为工业现场二设计的计算机</div>
-                <div className={'fz16 c999 content-padding'}>查看更多 ></div>
+                <a className={'fz16 c999 content-padding'} href="./mes">查看更多 ></a>
               </div>
             </div>
             <div className={'col-sa PDA fz28 cfff'}>
               PDA
-            <img className={'PDA-img'} alt="PDA" src="../../static/home/PDA.png" />
+            <img className={'PDA-img'} alt="PDA" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/PDA.png" />
               <div className={'col-t'}>
                 <div className={'fz20 cfff'}>让仓库信息化管理成为了现实</div>
-                <div className={'fz16 cfff content-padding'}>查看更多 ></div>
+                <a className={'fz16 c999 content-padding'} href="./mes">查看更多 ></a>
               </div>
             </div>
             <div className={'col-sa fz28 c333'}>
               订单处理软件
-              <img className={'order'} alt="order" src="../../static/home/order.png" />
+              <img className={'order'} alt="order" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/order.png" />
               <div className={'col-t'}>
                 <div className={'fz20 c333'}>让信息处理变得更加简单</div>
-                <div className={'fz16 c999 content-padding'}>查看更多 ></div>
+                <a className={'fz16 c999 content-padding'} href="./mes">查看更多 ></a>
               </div>
             </div>
           </div>
         </div>
         <div className={'col OMS'}>
-          <img alt="OMS" src="../../static/home/6.jpg" className={'background-img'} />
+          <img alt="OMS" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/6.jpg" className={'background-img'} />
           <h1 className={"fz36 main-title cfff"}>OMS  使仓储、运输、订单成为一个有机整体，满足物流系统信息化的需求</h1>
           <div className={"cfff main-subtitle fz24"}>订单处理系统  让信息处理变得更加简单</div>
-          <div className={'fz24 cfff content-padding'}>查看更多 ></div>
+          <a className={'fz24 cfff content-padding'} href="./oms">查看更多 ></a>
         </div>
         <style jsx>{`
         .margin-bottom{

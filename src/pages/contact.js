@@ -14,7 +14,7 @@ class Contact extends Component {
       <Layout>
         <div className={'col contact'}>
           <div className={'layout'}>
-            <img className={'w-100'} alt="banner" src="../../static/home/banner.png" />
+            <img className={'w-100'} alt="banner" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/banner.png" />
             <div className={'row-sa padding'}>
               <div className={'main'}>
                 <div className={'main-padding1 fz28'}>渠道合作</div>

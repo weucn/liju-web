@@ -8,9 +8,9 @@ class Oms extends Component {
             <Layout>
                 <div className={'col culture'}>
                     <div className={'layout'}>
-                        <img className={'w-100'} alt="banner" src="../../static/home/banner.png" />
+                        <img className={'w-100'} alt="banner" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/home/banner.png" />
                         <div className={'background col cfff'}>
-                            <img alt="bg" src="../../static/oms/8.jpg" className={'background-img'} />
+                            <img alt="bg" src="https://ljkj-web.oss-cn-hangzhou.aliyuncs.com/ljkj/oms/8.jpg" className={'background-img'} />
                             <div className={'content col'}>
                                 <span className={'fz36'}>工控机    为工业现场而设计的计算机</span>
                                 <span className={'fz24'}>一个完成生产进度的ERP系统，显示了每天需要发货的数量。</span>
